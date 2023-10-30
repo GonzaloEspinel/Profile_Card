@@ -14,10 +14,11 @@
 </head>
 
 <body>
-  <div class="container-main">
-    <ul class="mySelect">
+  <div class="container">
+<div class="mySelect">
+    <ul>
       <li>
-        <label>Include Cover?</label>
+        <label>Cover?</label>
         <select class="picker" for="includeCover">
           <option value="">defualt</option>
           <option value="true">Yes</option>
@@ -33,7 +34,7 @@
         <input class="picker" for="lastName" type="text" />
       </li>
       <li>
-        <label>SM Position</label>
+        <label>SM Location</label>
         <select class="picker" for="socMedPos">
           <option value="position-left">Left</option>
           <option value="position-right">Right</option>
@@ -59,9 +60,10 @@
         <label>Role</label>
         <select class="picker" for="role">
           <option value="">defualt</option>
-          <option value="Development">Web</option>
+          <option value="WWW">Web Guy</option>
           <option value="Design">Design</option>
           <option value="Visuals">Visuals</option>
+
         </select>
       </li>
       <li>
@@ -71,13 +73,11 @@
           <option value="Beijing">Beijing</option>
           <option value="Berlin"> Berlin</option>
           <option value="Bogota">Bogotá</option>
-          <option value="Brasilia">Brasilia</option>
-          <option value="Brussels">Brussels</option>
           <option value="Dublin">Dublin</option>
           <option value="Lisbon">Lisbon</option>
           <option value="London">London</option>
           <option value="Madrid">Madrid</option>
-          <option value="Mexico DF">Mexico</option>
+          <option value="Mexico DF">Mex DF</option>
           <option value="Miami">Miami</option>
           <option value="Munich">Munich</option>
           <option value="Ottawa">Ottawa</option>
@@ -92,13 +92,13 @@
         <label>Country</label>
         <select class="picker" for="country">
           <option value="">defualt</option>
-          <option value="BE">Belgium</option>
-          <option value="BR">Brazil</option>
           <option value="CA">Canada</option>
           <option value="CN">China</option>
           <option value="CO">Colombia</option>
+          <option value="DK">Denmark</option>
           <option value="FR">France</option>
           <option value="DE">Germany</option>
+          <option value="IE">Ireland</option>
           <option value="IT">Italy</option>
           <option value="JP">Japan</option>
           <option value="MX">Mexico</option>
@@ -107,27 +107,43 @@
           <option value="ES">Spain</option>
           <option value="GB">UK</option>
           <option value="US">USA</option>
-
+        </select>
+      </li>
+      <li>
+        <label>Language</label>
+        <select class="picker" for="language">
+          <option value="">defualt</option>
+          <option value="CN">Chinese</option>
+          <option value="DK">Denmark</option>
+          <option value="EN">English</option>
+          <option value="FR">French</option>
+          <option value="DE">German</option>
+          <option value="IT">Italian</option>
+          <option value="IE">Irish</option>
+          <option value="JP">Japanese</option>
+          <option value="KP">Korean</option>
+          <option value="PT">Portugal</option>
+          <option value="ES">Spanish</option>
         </select>
       </li>
     </ul>
-    <div container-body>
+  </div>
+  <div class="p-card">
+    <!-- <div class="card-bg">
+     
+    </div> -->
 
-      <div class="text">
-        <h1 id="firstNameInput"><ins>....</ins></h1>
-        <h1 id="lastNameInput"><ins>....</ins></h1>
-        <h3 id="cityInput"><ins>....</ins></h3>
-        <h4 id="countryInput"><ins>....</ins></h4>
-      </div>
-
-    </div>
-
+    <div class="t-output">
+                <h1 id="firstNameInput"><ins>....</ins></h1>
+                <h1 id="lastNameInput"><ins>....</ins></h1>
+                <h2 id="roleInput">...</h2>
+                <h3 id="cityInput"><ins>....</ins></h3>
+                <h4 id="countryInput"><ins>....</ins></h4>
+            </div>
+    
   </div>
 
-
   </div>
-
-  <script src="./assets/app.js"></script>
 </body>
 
 </html>
