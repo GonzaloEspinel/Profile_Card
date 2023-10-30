@@ -10,31 +10,31 @@ function textInput(change, textElement, link = false) {
         });
     }
 }
-const change = document.querySelector("#firstname, #lastname, #city, #country");
-const textElement = document.querySelector("#firstname, #lastname, #city, #country");
+const change = document.querySelectorAll("#firstname, #lastname, #city, #country");
+const textElement = document.querySelectorAll("#firstNameInput, #lastNameInput, #cityInput, #countryInput");
 
 textInput(change, textElement)
 
 
-const firstname= document.querySelector("#firstname")
-firstnameInput.addEventListener("change", ()=>{
-document.querySelector("#firstname").innerText = firstnameInput.value
-})
-const lastname= document.querySelector("#lastname")
-lastnameInput.addEventListener("change", ()=>{
+// const firstName= document.querySelector("#firstName")
+// firstNameInput.addEventListener("change", ()=>{
+// document.querySelector("#firstName").innerText = firstNameInput.value
+// })
+// const lastName= document.querySelector("#lastName")
+// lastnameInput.addEventListener("change", ()=>{
 
-    document.querySelector("#lastname").innerText = lastnameInput.value
-})
+//     document.querySelector("#lastName").innerText = lastNameInput.value
+// })
 
-const city= document.querySelector("#city")
-cityInput.addEventListener("change", ()=>{
-    document.querySelector("#city").innerText = cityInput.value
-})
+// const city= document.querySelector("#city")
+// cityInput.addEventListener("change", ()=>{
+//     document.querySelector("#city").innerText = cityInput.value
+// })
 
-const country= document.querySelector("#country")
-countryInput.addEventListener("change", ()=>{
-    document.querySelector("#country").innerText = countryInput.value
-})
+// const country= document.querySelector("#country")
+// countryInput.addEventListener("change", ()=>{
+//     document.querySelector("#country").innerText = countryInput.value
+// })
 
 
 
