@@ -1,59 +1,80 @@
-*{
-    margin: 0;
-    padding: 0;
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
 }
 
 body {
-    margin: 0;
-    padding: 0;
-    font-family: Kanit;
-    font-size: 400;
+  color: white;
+  font-family: Kanit;
+  font-weight: 300;
+  font-size: 12px;
+  text-align: center;
+  background-image: url(https://static.vecteezy.com/system/resources/previews/007/207/818/original/futuristic-technological-grid-background-digital-futurist-cyber-space-design-cyberpunk-technology-virtual-reality-science-fiction-matrix-science-light-perspective-wallpaper-illustration-free-vector.jpg);
+  max-width: 100%;
+  height: 100%;
+  background-size: cover;
 }
 
-.navbar {
-    display: flex;
-    align-items: center;
-    background-color: #333;
-    color: #fff;
-    height: 60px;
-    padding: 0 20px;
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
 }
 
-.navbar-brand {
-    font-size: 24px;
-    font-weight: bold;
-    margin-right: auto;
+.mySelect {
+  background-color: #0c2f46;
+  border-radius: 15px;
+  box-shadow: 5px 5px 5px #ffffff96;
+  margin: 15px;
+  width: 100%;
+  padding: 5px;
+
 }
 
-.navbar-nav {
-    display: flex;
-    align-items: center;
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
+.mySelect li {
+  display: inline-block;
+  align-items: flex-start;
+
+  max-width: 80px;
+  padding: 3px;
 }
 
-.nav-item {
-    margin-left: 20px;
+.mySelect li label {
+  display: block;
 }
 
-select, input[type="text"] {
-    margin-left: 10px;
-    padding: 5px;
-    border-radius: 5px;
-    border: none;
-    background-color: #ddd;
-    color: #333;
-    font-size: 16px;
+.mySelect li input {
+  width: 100%;
 }
 
-.container-main {
-   
-    position:relative;
-    background-color: #bfdbff;
-    color: #0c1145;
-    height: 100%;
-    padding: .5rem;
-    
+.seleccion li select {
+  width: 100%;
 }
 
+
+.p-card {
+background-image: url("https://acsweb.ucsd.edu/~jel242/Homepagepic.jpg");
+background-size: contain;
+background-repeat: no-repeat;
+background-position: top;
+  width: 400px;
+  height: 500px;
+  border: 4px solid #555555;
+  padding: 10px;
+  margin-top: 20px;
+  background-color: #ffffff;
+  border-radius: 20px;
+}
+
+.t-output{
+  position: relative;
+  align-items: center;
+  top: 43%;
+  color: #0c2f46;
+}
