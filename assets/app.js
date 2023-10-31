@@ -10,31 +10,38 @@ function textInput(change, textElement, link = false) {
         });
     }
 }
-const change = document.querySelectorAll("#firstname, #lastname, #city, #country");
-const textElement = document.querySelectorAll("#firstNameInput, #lastNameInput, #cityInput, #countryInput");
+// const change = document.querySelectorAll("#firstname, #lastname, #city, #country");
+// const textElement = document.querySelectorAll("#firstNameInput, #lastNameInput, #cityInput, #countryInput");
 
+// textInput(change, textElement)
+
+
+const firstName = document.querySelector("#firstName")
+firstName.addEventListener("input", ()=>{
+document.querySelector("#firstNameInput").innerText = firstName.value
+})
+const lastName = document.querySelector("#lastName")
+lastName.addEventListener("input", ()=>{
+document.querySelector("#lastNameInput").innerText = lastName.value
+})
+const role = document.querySelector("#role")
+role.addEventListener("input", ()=>{
+document.querySelector("#roleInput").innerText = role.value
+})
+
+const city = document.querySelector("#city")
+city.addEventListener("input", ()=>{
+document.querySelector("#cityInput").innerText = city.value
+})
+const country = document.querySelector("#country")
+country.addEventListener("input", ()=>{
+document.querySelector("#countryInput").innerText = country.value
+})
+const language = document.querySelector("#language")
+language.addEventListener("input", ()=>{
+document.querySelector("#languageInput").innerText = language.value
+})
 textInput(change, textElement)
-
-
-// const firstName= document.querySelector("#firstName")
-// firstNameInput.addEventListener("change", ()=>{
-// document.querySelector("#firstName").innerText = firstNameInput.value
-// })
-// const lastName= document.querySelector("#lastName")
-// lastnameInput.addEventListener("change", ()=>{
-
-//     document.querySelector("#lastName").innerText = lastNameInput.value
-// })
-
-// const city= document.querySelector("#city")
-// cityInput.addEventListener("change", ()=>{
-//     document.querySelector("#city").innerText = cityInput.value
-// })
-
-// const country= document.querySelector("#country")
-// countryInput.addEventListener("change", ()=>{
-//     document.querySelector("#country").innerText = countryInput.value
-// })
 
 
 
