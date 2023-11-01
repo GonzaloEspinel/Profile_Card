@@ -10,11 +10,9 @@ function textInput(change, textElement, link = false) {
         });
     }
 }
-// const change = document.querySelectorAll("#firstname, #lastname, #city, #country");
+// const input = document.querySelectorAll("#firstname, #lastname, #city, #country");
 // const textElement = document.querySelectorAll("#firstNameInput, #lastNameInput, #cityInput, #countryInput");
-
-// textInput(change, textElement)
-
+// textInput(input, textElement)
 
 const firstName = document.querySelector("#firstName")
 firstName.addEventListener("input", ()=>{
@@ -43,5 +41,22 @@ document.querySelector("#languageInput").innerText = language.value
 })
 textInput(change, textElement)
 
+const uploadButton = document.getElementById('upload-button');
+    const circularDiv = document.querySelector('.circular-div');
+
+    uploadButton.addEventListener('click', () => {
+      const input = document.createElement('input');
+      input.type = 'file';
+      input.accept = 'image/*';
+      input.onchange = () => {
+        const file = input.files[0];
+        const reader = new FileReader();
+        reader.readAsDataURL(file);
+        reader.onload = () => {
+          circularDiv.style.backgroundImage = `url(${reader.result})`;
+        };
+      };
+      input.click();
+    });
 
 

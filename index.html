@@ -6,8 +6,12 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="./assets/index.css">
 
-  <link rel="stylesheet"
-    href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Tangerine:wght@400;700&display=swap">
+  <link rel="stylesheet" href=<link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Kaushan+Script&display=swap"
+    rel="stylesheet">
+    <script src="https://kit.fontawesome.com/7f8ddb7f6d.js" crossorigin="anonymous"></script>
 
   <title>Profile Card</title>
 </head>
@@ -15,61 +19,61 @@
 
 <body>
   <div class="container">
-<div class="mySelect">
-    <ul>
-      <li>
-        <label>Cover?</label>
-        <select class="picker" id="cover" for="includeCover">
-          <option value="">defualt</option>
-          <option value="true">Yes</option>
-          <option value="false">No</option>
-        </select>
-      </li>
-      <li>
-        <label>First Name</label>
-        <input class="picker" id= "firstName" for="Name" type="text" />
-      </li>
-      <li>
-        <label>Last Name</label>
-        <input class="picker" id= "lastName" for="lastName" type="text" />
-      </li>
-      <li>
-        <label>SM Location</label>
-        <select class="picker" id="socMedPos" for="socMedPos">
-          <option value="position-left">Left</option>
-          <option value="position-right">Right</option>
-        </select>
-      </li>
-      <li>
-        <label>Twitter</label>
-        <input class="picker" id="twitter" for="twitter" type="text" />
-      </li>
-      <li>
-        <label>Github</label>
-        <input class="picker" id="github" for="github" type="text" />
-      </li>
-      <li>
-        <label>LinkedIn</label>
-        <input class="picker" id="linkedin" for="linkedin" type="text" />
-      </li>
-      <li>
-        <label>Instagram</label>
-        <input class="picker" id="ig" for="instagram" type="text" />
-      </li>
-      <li>
-        <label>Role</label>
-        <select class="picker" id="role" for="role">
-          <option value="">defualt</option>
-          <option value="WWW">Web Guy</option>
-          <option value="Design">Design</option>
-          <option value="Visuals">Visuals</option>
+    <div class="mySelect">
+      <ul>
+        <li>
+          <label>Cover?</label>
+          <select class="picker" id="cover" for="includeCover">
+            <option value="">defualt</option>
+            <option value="true">Yes</option>
+            <option value="false">No</option>
+          </select>
+        </li>
+        <li>
+          <label>First Name</label>
+          <input class="picker" id="firstName" for="Name" type="text" />
+        </li>
+        <li>
+          <label>Last Name</label>
+          <input class="picker" id="lastName" for="lastName" type="text" />
+        </li>
+        <li>
+          <label>SM Location</label>
+          <select class="picker" id="socMedPos" for="socMedPos">
+            <option value="position-left">Left</option>
+            <option value="position-right">Right</option>
+          </select>
+        </li>
+        <li>
+          <label>Twitter</label>
+          <input class="picker" id="twitter" for="twitter" type="text" placeholder="URL" />
+        </li>
+        <li>
+          <label>Github</label>
+          <input class="picker" id="github" for="github" type="text" placeholder="URL" />
+        </li>
+        <li>
+          <label>LinkedIn</label>
+          <input class="picker" id="linkedin" for="linkedin" type="text" placeholder="URL" />
+        </li>
+        <li>
+          <label>Instagram</label>
+          <input class="picker" id="ig" for="instagram" type="text" placeholder="URL" />
+        </li>
+        <li>
+          <label>Role</label>
+          <select class="picker" id="role" for="role">
+            <option value="">defualt</option>
+            <option value="Web Developer">Web Guy</option>
+            <option value="Visual Design">Design</option>
+            <option value="Photographer">Visuals</option>
 
-        </select>
-      </li>
-      <li>
-        <label>City</label>
-        <select class="picker" id= "city" for="city" type="text" />
-          <option value="Amsterdam">defualt</option>
+          </select>
+        </li>
+        <li>
+          <label>City</label>
+          <select class="picker" id="city" for="city" type="text" />
+          <option value="defualt">defualt</option>
           <option value="Beijing">Beijing</option>
           <option value="Berlin"> Berlin</option>
           <option value="Bogota">Bogotá</option>
@@ -86,63 +90,86 @@
           <option value="Seoul">Seoul</option>
           <option value="Tokyo">Tokyo</option>
           <option value="Toronto">Toronto</option>
-        </select>
-      </li>
-      <li>
-        <label>Country</label>
-        <select class="picker" id= "country" for="country" type="text" />
+          </select>
+        </li>
+        <li>
+          <label>Country</label>
+          <select class="picker" id="country" for="country" type="text" />
           <option value="">defualt</option>
-          <option value="CA">Canada</option>
-          <option value="CN">China</option>
-          <option value="CO">Colombia</option>
-          <option value="DK">Denmark</option>
-          <option value="FR">France</option>
-          <option value="DE">Germany</option>
-          <option value="IE">Ireland</option>
-          <option value="IT">Italy</option>
-          <option value="JP">Japan</option>
-          <option value="MX">Mexico</option>
-          <option value="PT">Portugal</option>
-          <option value="KP">S. Korea</option>
-          <option value="ES">Spain</option>
-          <option value="GB">UK</option>
-          <option value="US">USA</option>
-        </select>
-      </li>
-      <li>
-        <label>Language</label>
-        <select class="picker" id= "language" for="language" type="text" />
+          <option value="Canada">Canada</option>
+          <option value="China">China</option>
+          <option value="Colombia">Colombia</option>
+          <option value="Denmark">Denmark</option>
+          <option value="France">France</option>
+          <option value="Germany">Germany</option>
+          <option value="Ireland">Ireland</option>
+          <option value="Italy">Italy</option>
+          <option value="Japan">Japan</option>
+          <option value="Mexico">Mexico</option>
+          <option value="Portugal">Portugal</option>
+          <option value="South Korea">S. Korea</option>
+          <option value="Spain">Spain</option>
+          <option value="United Kindom">UK</option>
+          <option value="USA">USA</option>
+          </select>
+        </li>
+        <li>
+          <label>Language</label>
+          <select class="picker" id="language" for="language" type="text" />
           <option value="">defualt</option>
-          <option value="CN">Chinese</option>
-          <option value="DK">Denmark</option>
-          <option value="EN">English</option>
-          <option value="FR">French</option>
-          <option value="DE">German</option>
-          <option value="IT">Italian</option>
-          <option value="IE">Irish</option>
-          <option value="JP">Japanese</option>
-          <option value="KP">Korean</option>
-          <option value="PT">Portugal</option>
-          <option value="ES">Spanish</option>
-        </select>
-      </li>
-    </ul>
-  </div>
-  <div class="p-card">
-    <!-- <div class="card-bg">
-     
-    </div> -->
+          <option value="Chinese">Chinese</option>
+          <option value="Dutch">Dutch</option>
+          <option value="English">English</option>
+          <option value="French">French</option>
+          <option value="German">German</option>
+          <option value="Italian">Italian</option>
+          <option value="Irish">Irish</option>
+          <option value="Japanese">Japanese</option>
+          <option value="Korean">Korean</option>
+          <option value="Portuguese">Portugal</option>
+          <option value="Spanish">Spanish</option>
+          </select>
+        </li>
+      </ul>
+    </div>
+    <div class="p-card">
+      <div class="socMed">
+        <ul class="socMedRight">
+          <li><a href="https://twitter.com/birraslover">
+            <i class="fa-brands fa-square-x-twitter"></i></a></li>
+          <li><a href="https://github.com/GonzaloEspinel">
+            <i class="fa-brands fa-square-github"></i></a></li>
+          <li><a href="https://www.linkedin.com/in/gonzalo-espinel/">
+            <i class="fa-brands fa-linkedin"></i></a></li>
+          <li><a href="https://www.instagram.com/gonzaloaespinel/">
+            <i class="fa-brands fa-square-instagram"></i></a></li>
+        </ul>
+        <ul class="socMedLeft">
+          <li><a href="https://twitter.com/birraslover">
+            <i class="fa-brands fa-square-x-twitter"></i></a></li>
+          <li><a href="https://github.com/GonzaloEspinel">
+            <i class="fa-brands fa-square-github"></i></a></li>
+          <li><a href="https://www.linkedin.com/in/gonzalo-espinel/">
+            <i class="fa-brands fa-linkedin"></i></a></li>
+          <li><a href="https://www.instagram.com/gonzaloaespinel/">
+            <i class="fa-brands fa-square-instagram"></i></a></li>
+        </ul>
+      </div>
+      <div class="circular-div">
+        <img src="" id="photoUl" />
+      </div>
 
-    <div class="t-output">
-                <h1 id="firstNameInput"><ins>....</ins></h1>
-                <h1 id="lastNameInput"><ins>....</ins></h1>
-                <h2 id="roleInput">...</h2>
-                <h3 id="cityInput"><ins>....</ins></h3>
-                <h4 id="countryInput"><ins>....</ins></h4>
-                <h4 id="languageInput"><ins>....</ins></h4>
-            </div>
-    
-  </div>
+      <div class="t-output">
+        <h1 id="firstNameInput"><ins>....</ins></h1>
+        <h1 id="lastNameInput"><ins>....</ins></h1>
+        <h1 id="roleInput">...</h1>
+        <h2 id="cityInput"><ins>....</ins></h2>
+        <h2 id="countryInput"><ins>....</ins></h42>
+          <h3 id="languageInput"><ins>....</ins></h3>
+      </div>
+      <button id="upload-button">Upload Image</button>
+
+    </div>
 
   </div>
   <script type="text/javascript" src="./assets/app.js"></script>
