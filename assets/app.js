@@ -12,18 +12,7 @@ function textInput(change, textElement, link = false) {
 }
 textInput(document.querySelector("#firstName"), 
 document.querySelector("#firstNameInput"))
-// const input = document.querySelectorAll("#firstname, #lastname, #city, #country");
-// const textElement = document.querySelectorAll("#firstNameInput, #lastNameInput, #cityInput, #countryInput");
-// textInput(input, textElement)
 
-// const firstName = document.querySelector("#firstName")
-// firstName.addEventListener("input", ()=>{
-// document.querySelector("#firstNameInput").innerText = firstName.value
-// })
-// const lastName = document.querySelector("#lastName")
-// lastName.addEventListener("input", ()=>{
-// document.querySelector("#lastNameInput").innerText = lastName.value
-// })
 textInput(document.querySelector("#lastName"), 
 document.querySelector("#lastNameInput"))
 
