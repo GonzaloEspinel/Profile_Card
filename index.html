@@ -15,160 +15,96 @@
 
   <title>Profile Card</title>
 </head>
-
-
 <body>
-  <div class="container">
-    <div class="mySelect">
-      <ul>
-        <li>
-          <label>Cover</label>
-          <select class="picker" id="cover" for="includeCover">
-            <option value="default">default</option>
-            <option value="true">Yes</option>
-            <option value="false">No</option>
-          </select>
-        </li>
-        <li>
-          <label>First Name</label>
-          <input class="picker" id="firstName" for="Name" type="text" />
-        </li>
-        <li>
-          <label>Last Name</label>
-          <input class="picker" id="lastName" for="lastName" type="text" />
-        </li>
-        <li>
-          <label>SM Location</label>
-          <select class="picker" id="socMedPos" for="socMedPos">
-            <option value="position-left">Left</option>
-            <option value="position-right">Right</option>
-          </select>
-        </li>
-        <li>
-          <label>Twitter</label>
-          <input class="picker" id="twitter" for="twitter" type="text" placeholder="URL" />
-        </li>
-        <li>
-          <label>Github</label>
-          <input class="picker" id="github" for="github" type="text" placeholder="URL" />
-        </li>
-        <li>
-          <label>LinkedIn</label>
-          <input class="picker" id="linkedin" for="linkedin" type="text" placeholder="URL" />
-        </li>
-        <li>
-          <label>Instagram</label>
-          <input class="picker" id="ig" for="instagram" type="text" placeholder="URL" />
-        </li>
-        <li>
-          <label>Role</label>
-          <select class="picker" id="role" for="role">
-            <option value="default">default</option>
-            <option value="Web Developer">Web Guy</option>
-            <option value="Visual Design">Design</option>
-            <option value="Photographer">Visuals</option>
+    
+  <ul class="containers">
 
+    <li>
+      <li>
+          <label>Include Cover</label>
+          <select class="data" for="includeCover">
+            <option value="true">True</option>
+            <option value="false">False</option>
           </select>
-        </li>
-        <li>
-          <label>City</label>
-          <select class="picker" id="city" for="city" type="text" />
-          <option value="default">default</option>
-          <option value="Beijing">Beijing</option>
-          <option value="Berlin"> Berlin</option>
-          <option value="Bogota">Bogotá</option>
-          <option value="Dublin">Dublin</option>
+      </li>
+
+      <li>
+        <label>Name</label>
+        <input class="data" for="name" type="text"  />
+      </li>
+
+      <li>
+        <label>Last Name</label>
+        <input class="data" for="lastname" type="text" />
+      </li>
+      <li>
+        <label>S.M position</label>
+        <select  class="data" for="socialMediaPosition">
+          <option value="position-left">Left</option>
+          <option value="position-right">Right</option>
+        </select>
+      </li>
+      <li>
+        <label>Twitter</label>
+        <input class="data" for="twitter" type="text" />
+      </li>
+      <li>
+        <label>Github</label>
+        <input class="data" for="github" type="text"  />
+      </li>
+      <li>
+        <label>LinkedIn</label>
+        <input class="data" for="linkedin" type="text"  />
+      </li>
+      <li>
+        <label>Instagram</label>
+        <input class="data" for="instagram" type="text" />
+      </li>
+      <li>
+        <label>Role</label>
+        <select class="data" for="role">
+          <option value="">Default</option>
+          <option value="Web Developer">Web Developer</option>
+          <option value="Graphic Designer">Graphic Designer</option>
+          <option value="UX & UI Designer">UX & UI Designer</option>
+          <option value="Photographer">Photographer</option>  
+          <option value="Social Media Manager">Social Media Manager</option>
+        </select>
+      </li>
+      <li>
+        <label>City</label>
+        <select class="data" for="city">
+          <option value="">Default</option>
+          <option value="Caracas">Caracas</option>
           <option value="Lisbon">Lisbon</option>
-          <option value="London">London</option>
           <option value="Madrid">Madrid</option>
-          <option value="Mexico DF">Mex DF</option>
+          <option value="London">London</option>
           <option value="Miami">Miami</option>
-          <option value="Munich">Munich</option>
-          <option value="Ottawa">Ottawa</option>
-          <option value="Paris">Paris</option>
-          <option value="Rome">Rome</option>
-          <option value="Seoul">Seoul</option>
-          <option value="Tokyo">Tokyo</option>
-          <option value="Toronto">Toronto</option>
-          </select>
-        </li>
-        <li>
-          <label>Country</label>
-          <select class="picker" id="country" for="country" type="text" />
-          <option value="default">default</option>
-          <option value="Canada">Canada</option>
-          <option value="China">China</option>
-          <option value="Colombia">Colombia</option>
-          <option value="Denmark">Denmark</option>
-          <option value="France">France</option>
-          <option value="Germany">Germany</option>
-          <option value="Ireland">Ireland</option>
-          <option value="Italy">Italy</option>
-          <option value="Japan">Japan</option>
-          <option value="Mexico">Mexico</option>
+    
+        </select>
+      </li>
+      <li>
+        <label>Contry</label>
+        <select class="data" for="country">
+          <option value="">Default</option>
+          <option value="Venezuela">Venezuela</option>
           <option value="Portugal">Portugal</option>
-          <option value="South Korea">S. Korea</option>
           <option value="Spain">Spain</option>
           <option value="United Kingdom">UK</option>
           <option value="USA">USA</option>
-          </select>
-        </li>
-        <li>
-          <label>Language</label>
-          <select class="picker" id="language" for="language" type="text" />
-          <option value="default">default</option>
-          <option value="Chinese">Chinese</option>
-          <option value="Dutch">Dutch</option>
-          <option value="English">English</option>
-          <option value="French">French</option>
-          <option value="German">German</option>
-          <option value="Italian">Italian</option>
-          <option value="Irish">Irish</option>
-          <option value="Japanese">Japanese</option>
-          <option value="Korean">Korean</option>
-          <option value="Portuguese">Portugal</option>
-          <option value="Spanish">Spanish</option>
-          </select>
-        </li>
-      </ul>
-    </div>
-    <div class="p-card">
-      <div class="socMed">
-        <ul class="socMedRight">
-          <li><a href="https://twitter.com/birraslover">
-              <i class="fa-brands fa-square-x-twitter"></i></a></li>
-          <li><a href="https://github.com/GonzaloEspinel">
-              <i class="fa-brands fa-square-github"></i></a></li>
-          <li><a href="https://www.linkedin.com/in/gonzalo-espinel/">
-              <i class="fa-brands fa-linkedin"></i></a></li>
-          <li><a href="https://www.instagram.com/gonzaloaespinel/">
-              <i class="fa-brands fa-square-instagram"></i></a></li>
-        </ul>
-        <ul class="socMedLeft">
-          <li><a href="https://twitter.com/birraslover">
-              <i class="fa-brands fa-square-x-twitter"></i></a></li>
-          <li><a href="https://github.com/GonzaloEspinel">
-              <i class="fa-brands fa-square-github"></i></a></li>
-          <li><a href="https://www.linkedin.com/in/gonzalo-espinel/">
-              <i class="fa-brands fa-linkedin"></i></a></li>
-          <li><a href="https://www.instagram.com/gonzaloaespinel/">
-              <i class="fa-brands fa-square-instagram"></i></a></li>
-        </ul>
-      </div>
-   
+        </select>
+      </li>
+    </li>
+  </ul>
 
-      <div class="t-output">
-        <h1 id="firstNameInput"><ins>....</ins></h1>
-        <h1 id="lastNameInput"><ins>....</ins></h1>
-        <h1 id="roleInput">...</h1>
-        <h2 id="cityInput"><ins>....</ins></h2>
-        <h2 id="countryInput"><ins>....</ins></h42>
-          <h3 id="languageInput"><ins>....</ins></h3>
-      </div>
-    </div>
-
+  
+  <div id="card_content">
+  
   </div>
+
+  
   <script type="text/javascript" src="./assets/app.js"></script>
 </body>
+
 
 </html>
