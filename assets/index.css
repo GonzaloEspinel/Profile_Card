@@ -9,28 +9,28 @@ body {
   color: #fff;
   
 }
-.containers { 
+.container { 
   background-repeat: no-repeat;
   width: 80%; 
   margin: 0 auto; 
   padding-left: 30px;
   
 }
-.containers li {
+.container li {
   display: inline-block;
   max-width: 80px;
   padding: 3px;
 }
-.containers li label {
+.container li label {
   display: block;
   font-size: 12px;
   font-weight: 900;
   
 }
-.containers li input {
+.container li input {
   width: 100%;
 }
-.containers li select {
+.container li select {
   width: 100%;
 }
 .card {
